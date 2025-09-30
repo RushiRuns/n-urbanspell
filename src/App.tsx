@@ -22,11 +22,7 @@ import {
 } from "lucide-react";
 
 const App = () => {
-
-  const [showApplyModal, setShowApplyModal] = useState(false);
-
   const [expandedFaq, setExpandedFaq] = useState<number | null>(null);
-
   const [currentSlide, setCurrentSlide] = useState(0);
   const [currentScreenshotIndex, setCurrentScreenshotIndex] = useState(0);
   const [isPlaying, setIsPlaying] = useState(true);
