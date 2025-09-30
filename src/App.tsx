@@ -136,8 +136,6 @@ const App = () => {
     return () => observer.disconnect();
   }, []);
 
-
-
   const testimonials = [
     {
       name: "Bansari Ranpura",
@@ -233,6 +231,7 @@ const App = () => {
       asyncReviews: "16",
       popular: true,
       features: [
+        "Everything in starter plus:",
         "Provides Highest Customization",
         "LinkedIn OS 2.0 (reviewed) + Offer",
         "Messaging",
@@ -247,7 +246,7 @@ const App = () => {
       ],
     },
     {
-      name: "Team",
+      name: "Teams",
       tag: "3 seats",
       priceINR: "₹84,999",
       priceUSD: "$1199",
@@ -256,7 +255,11 @@ const App = () => {
       liveCalls: "—",
       asyncReviews: "—",
       features: [
-        "Provides Highest Customization",
+        "Everything in Pro+ plus:",
+        "Provides Highest Customization/person as per their position",
+        "Programmatic Account based marketing",
+        "role-specific tweaks (Founder / SDR / Content-ops, etc)",
+        "Team dashboard",
         "Pod Profile OS + Offer roles",
         "Messaging guild + hooks",
         "Shared Data Factory + AI Research",
