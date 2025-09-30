@@ -1,5 +1,6 @@
 
 import React, { useEffect, useRef, useState } from 'react';
+import { useMobileDetection } from '../hooks';
 
 interface Screenshot {
   src: string;
@@ -14,6 +15,7 @@ interface InfiniteCarouselProps {
 const InfiniteCarousel: React.FC<InfiniteCarouselProps> = ({ screenshots }) => {
   const carouselRef = useRef<HTMLDivElement>(null);
   const [isPaused, setIsPaused] = useState(false);
+  const isMobile = useMobileDetection();
 
   useEffect(() => {
     const carousel = carouselRef.current;
@@ -42,7 +44,7 @@ const InfiniteCarousel: React.FC<InfiniteCarouselProps> = ({ screenshots }) => {
     >
       <div
         className={`flex gap-4 md:gap-6 animate-scroll ${isPaused ? 'animation-paused' : ''}`}
-        style={{ animationDuration: '15s' }}
+        style={{ animationDuration: '5s' }}
       >
         {duplicatedScreenshots.map((screenshot, index) => (
           <div key={index} className="flex-shrink-0 w-[calc(100%/1)] md:w-[calc(100%/3)] lg:w-[calc(100%/5)]">
@@ -51,14 +53,14 @@ const InfiniteCarousel: React.FC<InfiniteCarouselProps> = ({ screenshots }) => {
                 <img
                   src={screenshot.src}
                   alt={screenshot.alt}
-                  className="w-full h-auto object-cover rounded-lg shadow-lg"
+                  className="w-full h-auto rounded-lg shadow-lg"
                 />
               </a>
             ) : (
               <img
                 src={screenshot.src}
                 alt={screenshot.alt}
-                className="w-full h-auto object-cover rounded-lg shadow-lg"
+                className="w-full h-auto rounded-lg shadow-lg"
               />
             )}
           </div>

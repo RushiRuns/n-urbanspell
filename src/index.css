@@ -6,6 +6,8 @@
   .animation-paused {
     animation-play-state: paused;
   }
+  
+
 }
 
 @keyframes scroll {

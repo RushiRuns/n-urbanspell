@@ -81,7 +81,7 @@ const App = () => {
       alt: "Client testimonial screenshot 1",
     },
     {
-      src: "/downloads/Screenshot-2.jpg",
+      src: "/downloads/Screenshot-2.png",
       alt: "Client testimonial screenshot 2",
     },
     {
@@ -97,7 +97,7 @@ const App = () => {
       alt: "Client testimonial screenshot 5",
     },
     {
-      src: "/downloads/Screenshot-6.png",
+      src: "/downloads/Screenshot-6.jpg",
       alt: "Client testimonial screenshot 6",
     },
   ];
