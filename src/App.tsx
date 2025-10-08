@@ -860,7 +860,7 @@ const App = () => {
                 <div className="flex items-center gap-2">
                   <Mail className="w-4 h-4" />
                   <a
-                    href="mailto:urbanspell@gmail.com"
+                    href="mailto:urbanspell20@gmail.com"
                     className="hover:text-white transition-colors"
                   >
                     urbanspell@gmail.com
